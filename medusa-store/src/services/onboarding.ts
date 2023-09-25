@@ -23,11 +23,9 @@ class OnboardingService extends TransactionBaseService {
       this.onboardingRepository_
     );
 
-    const status = await onboardingRepo.findOne({
+    return await onboardingRepo.findOne({
       where: { id: Not(IsNull()) },
     });
-
-    return status;
   }
 
   async update(data: UpdateOnboardingStateInput): Promise<OnboardingState> {
