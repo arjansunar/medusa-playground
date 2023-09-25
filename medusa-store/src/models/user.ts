@@ -1,4 +1,3 @@
-// TODO: modify user module to include reference to Store
 import { Column, Entity, Index, JoinColumn, ManyToOne } from "typeorm";
 import { User as MedusaUser } from "@medusajs/medusa";
 import { Store } from "./store";
