@@ -1,6 +1,7 @@
 export declare module "@medusajs/medusa/dist/models/store" {
   declare interface Store {
     members?: User[];
+    products?: Product[];
   }
 }
 
